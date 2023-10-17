@@ -1,0 +1,14 @@
+# Считываем координаты коня и фигуры
+knight_x = int(input())  # Координата X коня
+knight_y = int(input())  # Координата Y коня
+figure_x = int(input())  # Координата X другой фигуры
+figure_y = int(input())  # Координата Y другой фигуры
+
+# Проверяем, может ли конь побить фигуру
+dx = abs(knight_x - figure_x)
+dy = abs(knight_y - figure_y)
+
+if (dx == 1 and dy == 2) or (dx == 2 and dy == 1):
+    print("YES")
+else:
+    print("NO")

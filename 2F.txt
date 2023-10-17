@@ -1,0 +1,10 @@
+# Считываем три целых числа
+a = int(input())
+b = int(input())
+c = int(input())
+
+# Находим наибольшее из чисел с помощью функции max
+maximum = max(a, b, c)
+
+# Выводим результат
+print(maximum)

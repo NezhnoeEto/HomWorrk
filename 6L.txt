@@ -1,0 +1,19 @@
+# Считываем количество учеников
+N = int(input())
+
+# Считываем рост учеников и сохраняем в список
+heights = list(map(int, input().split()))
+
+# Считываем рост Пети
+Petya_height = int(input())
+
+# Находим место для Пети
+place = 1  # Изначально считаем, что Петя первый
+
+for i, height in enumerate(heights):
+    if Petya_height <= height:
+        place = i + 2  # Место Пети после ученика с большим или равным ростом
+        break
+
+# Выводим номер места для Пети
+print(place)

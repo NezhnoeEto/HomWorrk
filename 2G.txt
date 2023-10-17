@@ -1,0 +1,11 @@
+# Считываем координаты ладьи и фигуры
+rook_x = int(input())  # Координата X ладьи
+rook_y = int(input())  # Координата Y ладьи
+figure_x = int(input())  # Координата X другой фигуры
+figure_y = int(input())  # Координата Y другой фигуры
+
+# Проверяем, может ли ладья побить фигуру
+if rook_x == figure_x or rook_y == figure_y:
+    print("YES")
+else:
+    print("NO")

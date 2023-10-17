@@ -1,0 +1,13 @@
+# Считываем количество элементов в массиве
+N = int(input())
+
+# Считываем элементы массива
+arr = list(map(int, input().split()))
+
+# Переставляем соседние элементы
+for i in range(0, N - 1, 2):
+    arr[i], arr[i + 1] = arr[i + 1], arr[i]
+
+# Выводим массив после перестановки
+for element in arr:
+    print(element, end=" ")

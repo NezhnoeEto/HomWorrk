@@ -1,0 +1,19 @@
+# Функция для вычисления факториала
+def factorial(x):
+    if x == 0:
+        return 1
+    else:
+        result = 1
+        for i in range(1, x + 1):
+            result *= i
+        return result
+
+# Считываем значения n и k
+n = int(input())
+k = int(input())
+
+# Вычисляем C(n, k)
+C = factorial(n) // (factorial(k) * factorial(n - k))
+
+# Выводим результат
+print(C)

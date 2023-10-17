@@ -1,0 +1,15 @@
+def NumberOfZeroes(n):
+    count = 0
+    while n > 0:
+        digit = n % 10  # Получаем последнюю цифру числа
+        if digit == 0:
+            count += 1
+        n //= 10  # Убираем последнюю цифру
+    return count
+
+# Считываем число N
+N = int(input())
+
+# Вызываем функцию и выводим результат
+result = NumberOfZeroes(N)
+print(result)

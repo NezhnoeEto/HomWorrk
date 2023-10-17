@@ -1,0 +1,11 @@
+# Считываем координаты ферзя и фигуры
+queen_x = int(input())  # Координата X ферзя
+queen_y = int(input())  # Координата Y ферзя
+figure_x = int(input())  # Координата X другой фигуры
+figure_y = int(input())  # Координата Y другой фигуры
+
+# Проверяем, может ли ферзь побить фигуру
+if queen_x == figure_x or queen_y == figure_y or abs(queen_x - figure_x) == abs(queen_y - figure_y):
+    print("YES")
+else:
+    print("NO")

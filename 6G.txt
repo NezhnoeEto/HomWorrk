@@ -1,0 +1,18 @@
+# Считываем количество элементов в массиве
+N = int(input())
+
+# Считываем элементы массива
+arr = list(map(int, input().split()))
+
+# Переставляем элементы в обратном порядке
+left = 0
+right = N - 1
+
+while left < right:
+    arr[left], arr[right] = arr[right], arr[left]
+    left += 1
+    right -= 1
+
+# Выводим массив после перестановки
+for element in arr:
+    print(element, end=" ")
